@@ -35,3 +35,11 @@ bash generateVersion.sh
 ```bash
 bash generateVersion.sh true
 ```
+# Unit testing 
+Unit tests are implemented using [shunit2](https://github.com/kward/shunit2). It
+is included in this repository as a submodule. Once it's installed, you can run
+tests using a command like the one below.
+
+``` sh
+shunit2 test/commit-validation-suite.sh
+```
