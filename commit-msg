@@ -2,7 +2,7 @@
 
 main() {
 	# Regex to validate the type pattern
-	REGEX="^((Merge[ a-z-]* branch.*)|(Revert*)|((build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.*\))?!?: .*))((\n\n)[\S\s]+)?$"
+	REGEX="^((Merge[ a-z-]* branch.*)|(Revert*)|((build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\(.*\))?!?: .*))((\n\n)(.+\n{0,2})+)?$"
 
 	FILE=`cat $1` # File containing the commit message
 
