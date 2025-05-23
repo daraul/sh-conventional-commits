@@ -1,0 +1,2 @@
+feat: Test commit validation
+This line should be empty
