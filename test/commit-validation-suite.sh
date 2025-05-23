@@ -10,6 +10,11 @@ testCommitMessageWithInvalidBodyNotAccepted() {
     assertEquals 1 $?
 }
 
+testCommitMessageWithValidBodyAccepted() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-valid-body-is-accepted/commit.txt`
+    assertEquals 0 $?
+}
+
 oneTimeSetUp() {
   . ./commit-msg
 }

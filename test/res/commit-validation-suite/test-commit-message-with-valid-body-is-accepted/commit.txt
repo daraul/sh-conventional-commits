@@ -1,0 +1,8 @@
+feat: Test commit validation
+
+This line can have things in it.
+
+So can this one, and the one that comes after it. This one can even be kind of
+long. This isn't that long, though.
+
+Hi, I'm the bottom line.
