@@ -30,6 +30,31 @@ testValidCommitMessageWithCommentsIsAccepted() {
     assertEquals 0 $?
 }
 
+testCommitMessageWithOnlyBreakingChangeFooterIsAccepted() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-only-breaking-change-footer-is-accepted/commit.txt`
+    assertEquals 0 $?
+}
+
+testCommitMessageWithOnlyBreakingChangeTypeIsAccepted() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-only-breaking-change-type-is-accepted/commit.txt`
+    assertEquals 0 $?
+}
+
+testCommitMessageWithOnlyScopeAndBreakingChangeTypeIsAccepted() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-only-scope-and-breaking-change-type-is-accepted/commit.txt`
+    assertEquals 0 $?
+}
+
+testCommitMessageWithBothBreakingChangeTypeAndFooterIsAccepted() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-both-breaking-change-type-and-footer-is-accepted/commit.txt`
+    assertEquals 0 $?
+}
+
+testCommitMessageWithScopeAndNoBodyIsAccepted() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-scope-and-no-body-is-accepted/commit.txt`
+    assertEquals 0 $?
+}
+
 oneTimeSetUp() {
   . ./commit-msg
 }
