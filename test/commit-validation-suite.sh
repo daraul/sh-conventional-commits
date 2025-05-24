@@ -20,6 +20,11 @@ testCommitMessageWithValidBodyAndValidFooterIsAccepted() {
     assertEquals 0 $?
 }
 
+testCommitMessageWithValidBodyAndInvalidFooterIsRejected() {
+    output=`main test/res/commit-validation-suite/test-commit-message-with-valid-body-and-invalid-footer-is-rejected/commit.txt`
+    assertEquals 1 $?
+}
+
 oneTimeSetUp() {
   . ./commit-msg
 }
