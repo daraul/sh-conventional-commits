@@ -1,0 +1,23 @@
+test: Ensure support of breaking change pattern
+
+This commit updates an existing test to include a footer with the breaking
+change that doesn't have the hyphen character; this pattern is the most unlike
+the rest of footer, so the existing rules to support standard footer lines
+should automatically allow the other pattern.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch unit-tests
+# Your branch is up to date with 'origin/unit-tests'.
+#
+# Changes to be committed:
+#       modified:   commit-msg
+#       modified:   test/res/commit-validation-suite/test-commit-message-with-valid-body-and-valid-footer-is-accepted/commit.txt
+#
+# Changes not staged for commit:
+#       modified:   commit-msg
+#
+# Untracked files:
+#       my-commit.txt
+#
