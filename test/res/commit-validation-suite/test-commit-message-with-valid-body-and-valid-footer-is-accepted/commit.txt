@@ -8,3 +8,4 @@ obsolete now.
 
 Reviewed-by: Z
 Refs: #123
+BREAKING CHANGE: use JavaScript features not available in Node 6.
